@@ -1,0 +1,27 @@
+<div class="container">
+	<h1>Editar persona</h1>
+
+	<form action="/persona/u" method="POST">
+		
+		<input type="hidden" name="idPersona" th:value="${persona.id}"/>
+	
+		<label for="idLogin">Login </label>
+		<input id="idLogin" type="text" name="login" th:value="${persona.login}" autofocus="autofocus" />
+		<br />
+		
+		<label for="idNombre">Nombre </label>
+		<input id="idNombre" type="text" name="nombre" th:value="${persona.nombre}"/>
+		<br />
+
+
+		<label for="idApellido">Apellido </label>
+		<input id="idApellido" type="text" name="apellido" th:value="${persona.apellido}"/>
+		<br />
+
+
+	
+		
+		<input type="submit" value="Guardar cambios" />
+	</form>
+	<br />
+</div>
